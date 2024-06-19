@@ -1,7 +1,13 @@
-class Person:
-    def __init__(self, name, person_id):
-        self.name = name
-        self.person_id = person_id
+from library import Library
+from book import Book
+from patron import Patron
 
-    def __str__(self):
-        return f'Name: {self.name}, ID: {self.person_id}'
+our_library = Library('Wseiz Library', 'Rejtana 17, Warsaw')
+our_book = Book('Robinson Cruzeo', 300, 'adventure', 'J.J Rowling', '3423-kdsjflkdsjfkl')
+
+print("The name: ", our_library.name)
+print("Number of pages:", our_book.pages)
+print("The adress is", our_library.address)
+
+our_library.add_book(our_book) 
+our_library.remove_book(our_book)
