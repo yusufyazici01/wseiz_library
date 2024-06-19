@@ -1,5 +1,5 @@
 class Library:
-    def _init_(self, name, address):
+    def __init__(self, name, address):
         self.name = name
         self.address = address
         self.books = []
@@ -11,4 +11,4 @@ class Library:
     
     def remove_book(self, book):
         self.books.remove(book)
-        print(book.title, "was removed")
+        print(book.title, "was removed")    

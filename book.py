@@ -1,3 +1,4 @@
+
 class Book:
     def __init__(self, title, pages, type, author, isbn):
         self.title = title
